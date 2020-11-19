@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/nourhen11/ntfx-pwa/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/nourhen11/ntfx-pwa/static/js/main.836809cd.chunk.js",
-    "main.js.map": "/nourhen11/ntfx-pwa/static/js/main.836809cd.chunk.js.map",
-    "runtime-main.js": "/nourhen11/ntfx-pwa/static/js/runtime-main.75e99b0e.js",
-    "runtime-main.js.map": "/nourhen11/ntfx-pwa/static/js/runtime-main.75e99b0e.js.map",
-    "static/js/2.a821b748.chunk.js": "/nourhen11/ntfx-pwa/static/js/2.a821b748.chunk.js",
-    "static/js/2.a821b748.chunk.js.map": "/nourhen11/ntfx-pwa/static/js/2.a821b748.chunk.js.map",
-    "static/js/3.c0bb7979.chunk.js": "/nourhen11/ntfx-pwa/static/js/3.c0bb7979.chunk.js",
-    "static/js/3.c0bb7979.chunk.js.map": "/nourhen11/ntfx-pwa/static/js/3.c0bb7979.chunk.js.map",
-    "index.html": "/nourhen11/ntfx-pwa/index.html",
-    "service-worker.js": "/nourhen11/ntfx-pwa/service-worker.js",
-    "service-worker.js.map": "/nourhen11/ntfx-pwa/service-worker.js.map",
-    "static/css/main.6dea0f05.chunk.css.map": "/nourhen11/ntfx-pwa/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.a821b748.chunk.js.LICENSE.txt": "/nourhen11/ntfx-pwa/static/js/2.a821b748.chunk.js.LICENSE.txt"
+    "main.css": "/ntfx-pwa/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/ntfx-pwa/static/js/main.a2a75d9f.chunk.js",
+    "main.js.map": "/ntfx-pwa/static/js/main.a2a75d9f.chunk.js.map",
+    "runtime-main.js": "/ntfx-pwa/static/js/runtime-main.4774db4b.js",
+    "runtime-main.js.map": "/ntfx-pwa/static/js/runtime-main.4774db4b.js.map",
+    "static/js/2.ace13e03.chunk.js": "/ntfx-pwa/static/js/2.ace13e03.chunk.js",
+    "static/js/2.ace13e03.chunk.js.map": "/ntfx-pwa/static/js/2.ace13e03.chunk.js.map",
+    "static/js/3.c0bb7979.chunk.js": "/ntfx-pwa/static/js/3.c0bb7979.chunk.js",
+    "static/js/3.c0bb7979.chunk.js.map": "/ntfx-pwa/static/js/3.c0bb7979.chunk.js.map",
+    "index.html": "/ntfx-pwa/index.html",
+    "service-worker.js": "/ntfx-pwa/service-worker.js",
+    "service-worker.js.map": "/ntfx-pwa/service-worker.js.map",
+    "static/css/main.6dea0f05.chunk.css.map": "/ntfx-pwa/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.ace13e03.chunk.js.LICENSE.txt": "/ntfx-pwa/static/js/2.ace13e03.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.75e99b0e.js",
-    "static/js/2.a821b748.chunk.js",
+    "static/js/runtime-main.4774db4b.js",
+    "static/js/2.ace13e03.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.836809cd.chunk.js"
+    "static/js/main.a2a75d9f.chunk.js"
   ]
 }
