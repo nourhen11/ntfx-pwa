@@ -18,7 +18,6 @@ const home = () => {
         language: 'en-US'
       }
     }).then(result => {
-      console.log(result)
       setMovies(result.data.results)
       setTotalPages(result.data.total_pages)
     })
@@ -38,7 +37,6 @@ const home = () => {
       }
     })
       .then(result => {
-        console.log(result.data.results)
         setMovies(result.data.results)
       })
       .catch(err => {
@@ -56,7 +54,6 @@ const home = () => {
         page: selectedPage + 1
       }
     }).then(result => {
-      console.log(result)
       setMovies(result.data.results)
     })
   }

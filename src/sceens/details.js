@@ -2,12 +2,12 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import styled from 'styled-components'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHeart } from '@fortawesome/free-solid-svg-icons'
+
 import Navbar from '../components/navbar'
 
 const details = props => {
   const [movie, setMovie] = useState({})
+  const [genres, setGenres] = useState([])
   useEffect(() => {
     axios({
       method: 'GET',
@@ -17,8 +17,8 @@ const details = props => {
         language: 'en-US'
       }
     }).then(result => {
-      console.log(result.data)
       setMovie(result.data)
+      setGenres(result.data.genres)
     })
   }, [])
   const handleFavorite = favoriteMovie => {
@@ -34,38 +34,44 @@ const details = props => {
   }
 
   return (
-    <StyledDetail>
+    <div>
+      {' '}
       <Navbar />
-
-      <div>
-        <StyledImg
-          src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
-        />
-      </div>
-      <StyledDiv2>
-        <h2>{movie.title}</h2>
-        <p>{movie.release_date}</p>
-        <StyledButton
-          onClick={() =>
-            handleFavorite({
-              id: movie.id,
-              title: movie.title,
-              poster_path: movie.poster_path
-            })
-          }
-        >
-          <FontAwesomeIcon icon={faHeart} />
-        </StyledButton>
-      </StyledDiv2>
-    </StyledDetail>
+      <StyledDetail>
+        <div>
+          <StyledImg
+            src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+          />
+        </div>
+        <StyledDiv2>
+          <h2>{movie.title}</h2>
+          <p>{movie.release_date}</p>
+          {genres.map(genre => (
+            <span key={genre.id}>* {genre.name}</span>
+          ))}
+          <p>{movie.overview}</p>
+          <StyledButton
+            onClick={() =>
+              handleFavorite({
+                id: movie.id,
+                title: movie.title,
+                poster_path: movie.poster_path
+              })
+            }
+          >
+            Ajouter aux Favoris
+          </StyledButton>
+        </StyledDiv2>
+      </StyledDetail>
+    </div>
   )
 }
 const StyledDetail = styled.div`
-  background-color: black;
+  background-color: ${props => props.theme.secondry};
   color: white;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  min-height: 759px;
 `
 const StyledImg = styled.img`
   width: 153px;
@@ -77,8 +83,9 @@ const StyledDiv2 = styled.div`
 const StyledButton = styled.button`
   background-color: transparent;
   color: ${props => props.theme.primary};
-  width: 111px;
+  width: 155px;
   cursor: pointer;
+  height: 36px;
 `
 
 export default details

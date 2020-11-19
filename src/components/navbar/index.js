@@ -12,22 +12,25 @@ const NavBar = () => {
         <Link to='/home'>
           <Logo></Logo>
         </Link>
-        <Link to='favorite'>
-          <StyledLinkFavoris>
-            {' '}
+        <StyledLinkFavoris>
+          <Link to='favorite'>
             <FontAwesomeIcon icon={faHeart} />
-          </StyledLinkFavoris>
-        </Link>
+          </Link>
+        </StyledLinkFavoris>
       </StyledDiv>
     </>
   )
 }
-const StyledLinkFavoris = styled.a`
+const StyledLinkFavoris = styled.div`
+  a {
+    color: red;
+  }
   float: right;
   margin-top: 3px;
 `
 const StyledDiv = styled.div`
   color: white;
   background-color: black;
+  padding: 14px;
 `
 export default NavBar
